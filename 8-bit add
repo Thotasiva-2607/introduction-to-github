@@ -1,0 +1,6 @@
+LXI H, 0000H   ; Load HL with 0000H (clear result)
+MOV A, M       ; Load first number from memory into A
+INX H          ; Increment HL to next memory location
+ADD M          ; Add second number from memory
+MOV M, A       ; Store the result back in memory
+HLT            ; Halt execution
